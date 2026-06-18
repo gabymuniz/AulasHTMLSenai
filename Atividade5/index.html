@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="container p-5">
+    <main>
+        <h1>Testes JavaScript</h1>
+        <div class="container">
+            <form>
+                <div>
+                    <label class="form-label" for="nome">Digite seu nome: </label>
+                    <input class="form-control" p-3" type="text" id="nome">
+
+                    <label class="form-label" for="idade">Digite sua idade:</label>
+                    <input class="form-control" p-3" type="text" id="idade">
+
+                    <label class="form-label" for="cidade">Cargo: </label><br>
+                    <select class="form-control" id="cargo" name="cargo">
+                        <option value="">Selecione um cargo: </option>
+                        <option value="Desenvolvedor Jr.">Desenvolvedor Jr.</option>
+                        <option value="Desenvolvedor Pleno">Desenvolvedor Pleno</option>
+                        <option value="Desenvolvedor Senior">Desenvolvedor Senior</option>
+                    </select>
+                    <br>
+                    <label class="form-label" for="departamento">Departamento: </label><br>
+                    <select class="form-control" id="departamento" name="departamento">
+                        <option value="">Selecione um departamento</option>
+                        <option value="Contabilidade">Contabilidade</option>
+                        <option value="Juridico">Juridico</option>
+                        <option value="Contratos">Contratos</option>
+                    </select>
+                    <br>
+                    <label>Tem acesso restrito: </label>
+
+                    <input type="radio" id="acessoRestrito" name="acessoRestrito" value="sim">
+                    <label class="form-label" for="acessoRestritoSim">Sim</label>
+
+                    <input  type="radio" id="acessoRestrito" name="acessoRestrito" value="nao">
+                    <label  class="form-label" for="acessoRestritoNao">Não</label>
+                </div>
+                <button class="btn btn-primary" onclick="imprimirNome()">Enviar dados</button>
+            </form>
+            <!-- Comentário HTML - Comentar  Ctrl + ;     -->
+            <script src="formulario.js"></script>
+
+            <script>
+                console.log("Executado depois do alert")
+
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>
