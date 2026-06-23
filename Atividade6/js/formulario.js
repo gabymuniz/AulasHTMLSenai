@@ -10,15 +10,27 @@ function imprimirNome() {
 
     let departamento = document.getElementById("departamento").value;
 
-    let acessoRes = document.querySelector('input[name="acessoRestrito"]:checked')?.value;
+    let temAcessoRestrito = document.getElementById("temAcessoRestrito").checked; // Retorna true ou false
 
     //FAZER OS CONSOLES.LOG DE TODOS OS DADOS
     console.log("Nome do colaborador: " + nome);
     console.log("Idade: " + idade);
     console.log("Cargo: " + cargo);
     console.log("Departamento: " + departamento);
-    console.log("Acesso Restrito: " + acessoRes);
+    console.log("Acesso Restrito: " + temAcessoRestrito);
 
-    alert("Colaborador cadastrado! Confira os dados: \n\nNome do colaborador: " + nome + ", Idade: " + idade + ", Cargo: " + cargo + ", Departamento: " + departamento + ", Acesso restrito? " + acessoRes)
+    window.alert(
+        "Cadastro finalizado com sucesso!\n\n" +
+        "DADOS DO CRACHÁ:\n" +
+        "Nome: " + nome + "\n" +
+        "Idade: " + idade + "\n" +
+        "Departamento: " + departamento + "\n" +
+        "Acesso Restrito: " + temAcessoRestrito
+    );
 
+    if (temAcessoRestrito) { /// se (verdadeiro)
+        window.location.href = "../pages/gerente.html";
+    } else {
+        window.location.href = "../pages/funcionario.html";
+    }
 }

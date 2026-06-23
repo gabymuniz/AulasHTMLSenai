@@ -37,23 +37,18 @@
                         <option value="Contratos">Contratos</option>
                     </select>
                     <br>
-                    <label>Tem acesso restrito: </label>
-
-                    <input type="radio" id="acessoRestritoSim" name="acessoRestrito" value="sim">
-                    <label class="form-label" for="acessoRestritoSim">Sim</label>
-
-                    <input  type="radio" id="acessoRestritoNao" name="acessoRestrito" value="nao">
-                    <label  class="form-label" for="acessoRestritoNao">Não</label>
+                   
+                    <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" id="temAcessoRestrito">
+                    <label class="form-check-label" for="temAcessoRestrito">Tem Acesso Restrito?</label>
+                </div>
                 </div>
                 <button class="btn btn-primary" onclick="imprimirNome()">Enviar dados</button>
             </form>
             <!-- Comentário HTML - Comentar  Ctrl + ;     -->
-            <script src="formulario.js"></script>
+            <script src="../js/formulario.js"></script>
 
-            <script>
-                console.log("Executado depois do alert")
-
-            </script>
+         
         </div>
     </main>
 </body>
