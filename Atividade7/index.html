@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Teste de Persistência</title>
+</head>
+
+<body>
+    <form>
+
+        <label for="texto-inserido">Coloque seu nome: </label>
+        <input id="texto-inserido" type="text" placeholder="Ex: João">
+
+        <label for="texto-inserido">Coloque sua idade: </label>
+        <input id="idade-inserido" type="text" placeholder="Ex: 23">
+        <br>
+        <br>
+        <p>Nome salvo atualmente: <strong id="nome-salvo">NENHUM</strong></p>
+         <p>Idade salvo atualmente: <strong id="idade-salvo">NENHUM</strong></p>
+
+        <button type="button" onclick="salvarNome()">Salvar nome </button>
+        <script src="persistente.js"></script>
+    </form>
+</body>
+
+</html>
