@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de funções matematicas</title>
+</head>
+
+<body>
+    <main>
+        <h1>Teste de funções matematicas</h1>
+        <h2>SOMA</h2>
+        <label for="primeiro-numero">Digite o primeiro numero: </label>
+        <input type="number" id="primeiro-numero">
+        <br>
+        <label for="segundo-numero">Digite o segundo numero</label>
+        <input type="number" id="segundo-numero">
+        <br>
+        <button onclick="soma()">SOMA</button>
+        <button onclick="multiplicacao()">MULTIPLICAÇÃO</button>
+        <button onclick="divisao()">DIVISÃO</button>
+        <button onclick="subtracao()">SUBTRAÇÃO</button>
+        <p>Seu resultado é: <strong id="resultado"></strong></p>
+
+        <button onclick="salvarHistorico()"> Gerar Histórico</button>
+        <br>
+
+        <script src="js/funcoes.js"></script>
+    </main>
+
+</body>
+
+</html>
