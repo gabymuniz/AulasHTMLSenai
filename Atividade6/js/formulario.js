@@ -27,10 +27,11 @@ function imprimirNome() {
         "Departamento: " + departamento + "\n" +
         "Acesso Restrito: " + temAcessoRestrito
     );
-
+console.log("Acesso restrito:", temAcessoRestrito);
     if (temAcessoRestrito) { /// se (verdadeiro)
-        window.location.href = "../pages/gerente.html";
+       window.alert("Indo para gerente");
+        window.location.href = "gerente.html";
     } else {
-        window.location.href = "../pages/funcionario.html";
+        window.location.href = "funcionario.html";
     }
 }

@@ -5,10 +5,8 @@ function salvarNome(){
     let objetoPessoa = {
         nome: valorDigitado,
         idade: idadeDigitado
-
-
-
     };
+    
     let textoJSON = JSON.stringify(objetoPessoa)
     localStorage.setItem("dadoNome",textoJSON)
 

@@ -1,4 +1,6 @@
 function cadastrarFuncionario() {
+
+    event.preventDefault();
     let nome = document.getElementById("nome-funcionario").value;
     let horas = document.getElementById("horas-funcionario").value;
     let cargo = document.getElementById("cargo-funcionario").value;
@@ -18,8 +20,7 @@ function cadastrarFuncionario() {
     cardFuncionario.style.margin = "10px 0";
     cardFuncionario.style.borderRadius = "5px";
 
-    cardFuncionario.innerHTML =
-        "<p><strong>Nome:</strong> " + nome + "</p>" +
+    cardFuncionario.innerHTML ="<p><strong>Nome:</strong> " + nome + "</p>" +
         "<p><strong>Cargo:</strong> " + cargo + "</p>" +
         "<p><strong>Carga Horária:</strong> " + horas + "h semanais</p>";
 
@@ -29,4 +30,4 @@ function cadastrarFuncionario() {
     document.getElementById("nome-funcionario").value = "";
     document.getElementById("cargo-funcionario").value = "";
     document.getElementById("horas-funcionario").selectedIndex = 0; // Volta para a primeira opção (20h)
-}
+} 
